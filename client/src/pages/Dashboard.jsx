@@ -1,10 +1,12 @@
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 import ResumeCard from "../components/ResumeCard";
 import ProgressBar from "../components/ProgressBar";
 import AnalysisCard from "../components/AnalysisCard";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const Navigate = useNavigate();
   const location = useLocation();
 
   const data = location.state || {};
@@ -94,6 +96,16 @@ const Dashboard = () => {
           />
 
           <AnalysisCard title="Resume Summary" description={summary} />
+
+          <button
+            onClick={() => Navigate("/")}
+            style={{
+              backgroundColor: "blueviolet",
+              color: "black",
+            }}
+          >
+            ⬅ Back to Home{" "}
+          </button>
         </div>
       </div>
     </div>
