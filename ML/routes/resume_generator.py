@@ -14,7 +14,7 @@ def generate_resume():
     return jsonify({
         "success": True,
         "message": "Resume Generated Successfully",
-        "pdf_url": "http://127.0.0.1:5000/api/download-resume"
+        "pdf_url": "https://ai-resume-analyzer-and-builder-1.onrender.com/api/download-resume"
     })
 
 
