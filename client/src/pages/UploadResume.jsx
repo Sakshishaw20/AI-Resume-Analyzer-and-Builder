@@ -30,7 +30,7 @@ const UploadResume = () => {
 
       // Send file to Flask
       const response = await axios.post(
-        "http://127.0.0.1:5000/api/analyze",
+        "https://ai-resume-analyzer-and-builder-1.onrender.com/api/analyze",
         formData,
         {
           headers: {
