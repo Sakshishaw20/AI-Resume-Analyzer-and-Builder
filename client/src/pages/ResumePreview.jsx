@@ -19,7 +19,7 @@ const ResumePreview = () => {
 
       <div className="flex gap-5">
         <button
-          onClick={() => navigate("/choose")}
+          onClick={() => navigate("/")}
           className=" bg-gray-700 text-xl"
           style={{
             padding: "10px 20px",
