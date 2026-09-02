@@ -30,7 +30,7 @@ const CreateResume = () => {
   const handleGenerateResume = async () => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/api/generate-resume",
+        "https://ai-resume-analyzer-and-builder-1.onrender.com/api/generate-resume",
         formData,
       );
 
